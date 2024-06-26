@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100vh;
+}
+.note{
+  background-color: #fef68a;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+.note.new{
+  background-color: #67d7cc;
+}
+textarea{
+  border: none;
+  background-color: #67d7cc;
+  outline: none;
+  resize: none;
+}
+.save{
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+.save:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+.note-list{
+  /* display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+
+}
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bi-trash{
+  cursor: pointer;
+}
+.search{
+    display: flex;   
+    align-items: center;
+    background-color: rgb(233,233,233);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 1.5rem;
+}
+.search input{
+  border: none;
+  background-color:rgb(233,233,233);
+  outline: none;
+  padding: 5px;
+}
+.Header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.darkMode{
+  background-color: black;
+}
+.darkMode h1{
+  color: white;
+}
